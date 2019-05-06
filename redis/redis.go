@@ -37,7 +37,7 @@ func NewStore(size int, network, address, password string, keyPairs ...[]byte) (
 // NewStoreWithDB - like NewStore but accepts `DB` parameter to select
 // redis DB instead of using the default one ("0")
 //
-// Ref: https://godoc.org/github.com/boj/redistore#NewRediStoreWithDB
+// Ref: https://godoc.org/github.com/skamenetskiy/redistore#NewRediStoreWithDB
 func NewStoreWithDB(size int, network, address, password, DB string, keyPairs ...[]byte) (Store, error) {
 	s, err := redistore.NewRediStoreWithDB(size, network, address, password, DB, keyPairs...)
 	if err != nil {
@@ -48,7 +48,7 @@ func NewStoreWithDB(size int, network, address, password, DB string, keyPairs ..
 
 // NewStoreWithPool instantiates a RediStore with a *redis.Pool passed in.
 //
-// Ref: https://godoc.org/github.com/boj/redistore#NewRediStoreWithPool
+// Ref: https://godoc.org/github.com/skamenetskiy/redistore#NewRediStoreWithPool
 func NewStoreWithPool(pool *redis.Pool, keyPairs ...[]byte) (Store, error) {
 	s, err := redistore.NewRediStoreWithPool(pool, keyPairs...)
 	if err != nil {
@@ -63,7 +63,7 @@ type store struct {
 
 // GetRedisStore get the actual woking store.
 //
-// Ref: https://godoc.org/github.com/boj/redistore#RediStore
+// Ref: https://godoc.org/github.com/skamenetskiy/redistore#RediStore
 func GetRedisStore(s Store) (err error, rediStore *redistore.RediStore) {
 	realStore, ok := s.(*store)
 	if !ok {
