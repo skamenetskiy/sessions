@@ -2,9 +2,6 @@ language: go
 sudo: false
 
 go:
-  - 1.8.x
-  - 1.9.x
-  - 1.10.x
   - 1.11.x
   - 1.12.x
   - master
@@ -14,21 +11,13 @@ services:
   - memcached
   - mongodb
 
-matrix:
-  fast_finish: true
-  include:
-  - go: 1.12.x
-
 before_install:
   - go get github.com/golang/dep/cmd/dep
-  - go get github.com/campoy/embedmd
 
 install:
-  - go get -t -v .
+  - dep ensure
 
 script:
-  - dep ensure
-  - embedmd -d *.md
   - go test -v -covermode=atomic -coverprofile=coverage.out
 
 after_success:

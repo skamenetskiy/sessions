@@ -39,7 +39,7 @@
 [[projects]]
   branch = "master"
   digest = "1:192a1948cf97f1adcd137a8c2f46f752ad74f5c1b055ed0cd2e59095e9687b49"
-  name = "github.com/gin-contrib/sessions"
+  name = "github.com/skamenetskiy/sessions"
   packages = [
     ".",
     "cookie",
@@ -211,13 +211,13 @@
   input-imports = [
     "github.com/bradfitz/gomemcache/memcache",
     "github.com/bradleypeabody/gorilla-sessions-memcache",
-    "github.com/gin-contrib/sessions",
-    "github.com/gin-contrib/sessions/cookie",
-    "github.com/gin-contrib/sessions/memcached",
-    "github.com/gin-contrib/sessions/memstore",
-    "github.com/gin-contrib/sessions/mongo",
-    "github.com/gin-contrib/sessions/redis",
-    "github.com/gin-contrib/sessions/tester",
+    "github.com/skamenetskiy/sessions",
+    "github.com/skamenetskiy/sessions/cookie",
+    "github.com/skamenetskiy/sessions/memcached",
+    "github.com/skamenetskiy/sessions/memstore",
+    "github.com/skamenetskiy/sessions/mongo",
+    "github.com/skamenetskiy/sessions/redis",
+    "github.com/skamenetskiy/sessions/tester",
     "github.com/gin-gonic/gin",
     "github.com/globalsign/mgo",
     "github.com/gomodule/redigo/redis",
