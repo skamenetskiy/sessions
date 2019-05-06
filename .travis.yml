@@ -7,7 +7,7 @@ go:
   - master
 
 services:
-  - redis
+  - redis-server
   - memcached
   - mongodb
 

@@ -2,14 +2,6 @@
 
 
 [[projects]]
-  digest = "1:db932d4696ed23e244a69a60d258a23816aceb012a95e4c3871c711d4fc120e7"
-  name = "github.com/boj/redistore"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "fc113767cd6b051980f260d6dbe84b2740c46ab0"
-  version = "v1.2"
-
-[[projects]]
   branch = "master"
   digest = "1:f98385a9b77f6cacae716a59c04e6ac374d101466d4369c4e8cc706a39c4bb2e"
   name = "github.com/bradfitz/gomemcache"
@@ -35,22 +27,6 @@
   pruneopts = "UT"
   revision = "a69d19351219b6dd56f274f96d85a7014a2ec34e"
   version = "v1.6.0"
-
-[[projects]]
-  branch = "master"
-  digest = "1:192a1948cf97f1adcd137a8c2f46f752ad74f5c1b055ed0cd2e59095e9687b49"
-  name = "github.com/skamenetskiy/sessions"
-  packages = [
-    ".",
-    "cookie",
-    "memcached",
-    "memstore",
-    "mongo",
-    "redis",
-    "tester",
-  ]
-  pruneopts = "UT"
-  revision = "1532893d996f0fedbac1162ea1311ebfb57a3da5"
 
 [[projects]]
   digest = "1:36fe9527deed01d2a317617e59304eb2c4ce9f8a24115bcc5c2e37b3aee5bae4"
@@ -211,13 +187,6 @@
   input-imports = [
     "github.com/bradfitz/gomemcache/memcache",
     "github.com/bradleypeabody/gorilla-sessions-memcache",
-    "github.com/skamenetskiy/sessions",
-    "github.com/skamenetskiy/sessions/cookie",
-    "github.com/skamenetskiy/sessions/memcached",
-    "github.com/skamenetskiy/sessions/memstore",
-    "github.com/skamenetskiy/sessions/mongo",
-    "github.com/skamenetskiy/sessions/redis",
-    "github.com/skamenetskiy/sessions/tester",
     "github.com/gin-gonic/gin",
     "github.com/globalsign/mgo",
     "github.com/gomodule/redigo/redis",
