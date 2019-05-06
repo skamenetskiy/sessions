@@ -3,10 +3,10 @@ package redis
 import (
 	"errors"
 
-	"github.com/boj/redistore"
-	"github.com/gin-contrib/sessions"
 	"github.com/gomodule/redigo/redis"
 	gsessions "github.com/gorilla/sessions"
+	"github.com/skamenetskiy/redistore"
+	"github.com/skamenetskiy/sessions"
 )
 
 type Store interface {
